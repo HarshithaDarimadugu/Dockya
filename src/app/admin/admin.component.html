@@ -1,1 +1,21 @@
-<a href="doctorslist"><button>view doctors</button></a>
+<p>
+    <mat-toolbar color="accent"> 
+      <span class="example"></span>
+      <h1><b>ADMIN</b></h1>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon" aria-label="https://icons8.com/icon/ELTwbenuOQOs/out-patient-department">
+        <mat-icon>https://icons8.com/icon/ELTwbenuOQOs/out-patient-department</mat-icon>
+      </button>
+    </mat-toolbar>
+</p>
+<div>
+    <mat-card class="sample">
+      <mat-card-header>
+        <mat-card-title>View</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions>
+          <a href="doctorslist"><button mat-raised-button>view doctors</button></a>
+          <button mat-button (click)="openDialog()">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,31 @@
+/* Structure */
+table {
+    width: 90%;
+    padding: 20px;
+  }
+  
+.mat-mdc-form-field {
+    font-size: 10px;
+    width: 100%;
+    padding: 0%;
+}
+th{
+    font-size: 16px;
+}
+td{
+    font-size: 14px;
+}
+.btn{
+    margin-right: 10px;
+}
+.fa-edit .fa-remove{
+    font-size: 5px;
+}
+.button{
+    padding: 10px;
+}
+
+table.body{
+    padding: 20px;
+    padding-top: 50px;
+}

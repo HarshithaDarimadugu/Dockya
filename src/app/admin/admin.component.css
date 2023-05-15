@@ -1,0 +1,19 @@
+.sample {
+    margin-top: 5px; 
+    width: 25%;
+    height: 200%;
+    background-color: lavender;
+    margin-right: 30px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .example{
+    flex: 1 1 auto;
+    font-size: medium;
+    padding-top: 0%;
+    text-decoration: solid;
+  }
+  .example-icon{
+    background-color: rgba(255, 106, 20, 0.712);
+  }
