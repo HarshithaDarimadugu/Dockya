@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { DoctorslistComponent } from './doctorslist/doctorslist.component';
 import { CancelComponent } from './admin/cancel/cancel.component';
+import { MatLabel } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -20,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), MatLabel],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
