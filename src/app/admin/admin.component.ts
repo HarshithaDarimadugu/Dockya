@@ -8,10 +8,13 @@ import { CancelComponent } from './cancel/cancel.component';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-  constructor(public dialog: MatDialog) {}
+  title ='angular-dialog';
+  constructor(public MatDialog: MatDialog) {}
 
   openDialog() {
-    this.dialog.open(CancelComponent);
+    this.MatDialog.open(CancelComponent, {
+      width:'350px',
+    })
   }
 
 }

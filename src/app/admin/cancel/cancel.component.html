@@ -1,15 +1,23 @@
-<div class="sample" style="height: 150px;">
-<h1 mat-dialog-title>Enquiry</h1>
-<div mat-dialog-content>
-  <mat-form-field appearance="fill">
-  <mat-label>Enter your email</mat-label>
-  <input matInput placeholder="pat@example.com">
-  </mat-form-field>
+<div class="sample">
+  <div mat-dialog-content>
+    <header align="center">
+      <h1>Delete Account</h1>
+    </header>
+    <br>
+    <div mat-form-field align="center">
+      <div mat-label>Email</div>
+      <input matInput placeholder="ex. abc@gmail.com">
+    </div>
+  </div>
+  <br><br>
+  <div class ="ex">
+    <div mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>OK</button>
+      <button mat-button mat-dialog-close cdkFocusInitial>Cancel</button>
+    </div>
+  </div>
 </div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
-</div>
-</div>
+
 
 
 

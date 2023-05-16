@@ -15,8 +15,9 @@
       </mat-card-header>
       <mat-card-actions>
           <a href="doctorslist"><button mat-raised-button>view doctors</button></a>
-          <button mat-button (click)="openDialog()">Delete</button>
-          <mat-icon>photo</mat-icon>
+          <mat-dialog-actions>
+            <button mat-button (click)="openDialog()">Delete</button>
+          </mat-dialog-actions>
       </mat-card-actions>
     </mat-card>
 </div>
