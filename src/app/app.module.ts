@@ -21,6 +21,14 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatCommonModule} from '@angular/material/core';
 import { MatDialogModule, MatDialogContent, MatDialogActions } from '@angular/material/dialog';
 import { MatOptionModule } from '@angular/material/core';
+import { AdminpfComponent } from './adminpf/adminpf.component';
+import { NurseappointComponent } from './nurseappoint/nurseappoint.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { LandcComponent } from './landc/landc.component';
+import { TokensComponent } from './nurseappoint/tokens/tokens.component';
+import { EditcComponent } from './nurseappoint/editc/editc.component';
+import { Token2Component } from './nurseappoint/token2/token2.component';
 
 
 
@@ -30,6 +38,12 @@ import { MatOptionModule } from '@angular/material/core';
     AppComponent,
     AdminComponent,
     DoctorslistComponent,
+    AdminpfComponent,
+    NurseappointComponent,
+    LandcComponent,
+    TokensComponent,
+    EditcComponent,
+    Token2Component,
    
    
   ],
@@ -49,6 +63,8 @@ import { MatOptionModule } from '@angular/material/core';
     FormsModule,
     MatCommonModule, MatOptionModule,
     MatDialogModule,
+    MatSidenavModule,
+    MatListModule,
 
   ],
   providers: [],

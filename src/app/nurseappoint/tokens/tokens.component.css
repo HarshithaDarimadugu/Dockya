@@ -1,0 +1,14 @@
+.sample{
+    height: 90%;
+    width: 600px;
+    padding-top: 2px;
+    padding-left: 10px;
+    margin-left: 400px;
+    margin-top: 20px;
+    background-color:floralwhite;
+}
+.mat-icon{
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
