@@ -21,9 +21,9 @@ export class AdminComponent {
     this.MatDialog.open(AdddoctorComponent,{
 
     }),
-    this.MatDialog.open(AddnurseComponent,{
+    this.MatDialog.open(AddnurseComponent),{
 
-    })
+    }
   }
   
   

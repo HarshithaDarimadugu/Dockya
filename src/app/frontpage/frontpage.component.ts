@@ -1,4 +1,5 @@
 import { Component , OnInit } from '@angular/core';
+import * as Aos from 'aos';
 
 
 
@@ -11,6 +12,9 @@ import { Component , OnInit } from '@angular/core';
 export class FrontpageComponent implements OnInit {
   constructor() {}
   ngOnInit() {
+    Aos.init({
+      duration: 1200,
+    })
     
   }
 }
