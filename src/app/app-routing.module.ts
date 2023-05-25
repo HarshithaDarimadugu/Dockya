@@ -11,6 +11,10 @@ import { LandcComponent } from './landc/landc.component';
 import { TokensComponent } from './nurseappoint/tokens/tokens.component';
 import { EditcComponent } from './nurseappoint/editc/editc.component';
 import { Token2Component } from './nurseappoint/token2/token2.component';
+import { MainpgComponent } from './mainpg/mainpg.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
+import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
+import { AddnurseComponent } from './admin/addnurse/addnurse.component';
 
 
 const routes: Routes = [
@@ -41,7 +45,18 @@ const routes: Routes = [
   {
     path: 'token2' ,component:Token2Component
   },
-  
+  {
+    path :'mainpg' , component:MainpgComponent
+  },
+  {
+    path :'frontpage', component:FrontpageComponent
+  },
+  {
+    path:'adddoctor',component:AdddoctorComponent
+  },
+  {
+    path:'addnurse', component:AddnurseComponent
+  }
 
 ];
 

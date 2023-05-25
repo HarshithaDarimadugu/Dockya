@@ -4,7 +4,7 @@
     float: inline-end;
   }
   .save:hover{
-    background-color: blue;
+    background-color: red;
   }
   .saved:hover{
     background-color: blue;
