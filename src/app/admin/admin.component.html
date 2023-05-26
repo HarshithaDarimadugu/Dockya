@@ -17,15 +17,16 @@
       <mat-card-actions>
           <a href="doctorslist"><button mat-raised-button>view doctors</button></a>
           <mat-dialog-actions>
-            <button mat-button (click)="openDialog()">Delete</button>
+            <button (click)="openDialogBox1()">Open Delete</button>
           </mat-dialog-actions>
       </mat-card-actions>
     </mat-card>
 </div>
 <br>
-<div>
-  <button mat-button (click)="openDialog()">Add Doctor</button>
-</div>
-<div>
-  <button mat-button (click)="openDialog()">Add Nurse</button>
-</div>
+<button (click)="openDialogBox2()">Open Add Doctor</button>
+<button (click)="openDialogBox3()">Open Add Nurse</button>
+<br><br>
+
+<a href="patiendb"><mat-icon>dashboard</mat-icon></a>
+
+<!--<a href="patiendb"><button mat-button ><u>forgot password</u></button></a>-->

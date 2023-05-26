@@ -5,4 +5,13 @@
 button {
     margin-right: 8px;
   }
-  
+  .save{
+    align-items: center;
+    float: inline-end;
+  }
+  .save:hover{
+    background-color:lightcoral;
+  }
+  .saved:hover{
+    background-color: skyblue;
+  }

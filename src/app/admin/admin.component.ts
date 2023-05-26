@@ -11,21 +11,27 @@ import { AddnurseComponent } from './addnurse/addnurse.component';
 })
 export class AdminComponent {
   title ='angular-dialog';
-  constructor(public MatDialog: MatDialog) {}
-
-  openDialog() {
-    this.MatDialog.open(CancelComponent, {
-      width:'350px',
-    }),
-
-    this.MatDialog.open(AdddoctorComponent,{
-
-    }),
-    this.MatDialog.open(AddnurseComponent),{
-
-    }
+  constructor(private dialog: MatDialog) {}
+  openDialogBox1(): void {
+    const dialogRef = this.dialog.open(CancelComponent, {
+      width: '500px',
+      disableClose: true, // Prevents closing the dialog by clicking outside
+    });
+  }
+  openDialogBox2(): void {
+    const dialogRef = this.dialog.open(AdddoctorComponent, {
+      width: '500px',
+      disableClose: true, // Prevents closing the dialog by clicking outside
+    });
+  }
+  openDialogBox3(): void {
+    const dialogRef = this.dialog.open(AddnurseComponent, {
+      width: '500px',
+      disableClose: true,
+    });
   }
   
+
   
 
 }

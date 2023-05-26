@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-landc',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./landc.component.css']
 })
 export class LandcComponent {
+  
+ 
 
 }

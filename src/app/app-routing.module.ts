@@ -15,6 +15,9 @@ import { MainpgComponent } from './mainpg/mainpg.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
 import { AddnurseComponent } from './admin/addnurse/addnurse.component';
+import { PatiendbComponent } from './patiendb/patiendb.component';
+import { PatientappointComponent } from './patiendb/patientappoint/patientappoint.component';
+
 
 
 const routes: Routes = [
@@ -56,7 +59,13 @@ const routes: Routes = [
   },
   {
     path:'addnurse', component:AddnurseComponent
-  }
+  },
+  {
+    path:'patiendb', component:PatiendbComponent
+  },
+  {
+    path:'patientappoint',component:PatientappointComponent
+  },
 
 ];
 

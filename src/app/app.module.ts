@@ -33,7 +33,10 @@ import { MainpgComponent } from './mainpg/mainpg.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
 import { AddnurseComponent } from './admin/addnurse/addnurse.component';
-
+import { PatiendbComponent } from './patiendb/patiendb.component';
+import { PatientappointComponent } from './patiendb/patientappoint/patientappoint.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { NativeDateModule } from '@angular/material/core';
 
 
 
@@ -52,6 +55,8 @@ import { AddnurseComponent } from './admin/addnurse/addnurse.component';
     FrontpageComponent,
     AdddoctorComponent,
     AddnurseComponent,
+    PatiendbComponent,
+    PatientappointComponent,
    
    
   ],
@@ -73,6 +78,8 @@ import { AddnurseComponent } from './admin/addnurse/addnurse.component';
     MatDialogModule,
     MatSidenavModule,
     MatListModule,
+    MatDatepickerModule,
+    NativeDateModule
 
   ],
   providers: [],
