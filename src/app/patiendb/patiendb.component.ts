@@ -5,6 +5,8 @@ import {MatTableDataSource} from '@angular/material/table';
 import { PatientappointComponent } from './patientappoint/patientappoint.component';
 import { MatDialog } from '@angular/material/dialog';
 
+
+
 export interface data {
   serialno: number;
   doctor: string;
@@ -39,13 +41,15 @@ export class PatiendbComponent {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(PatientappointComponent, {
-      width: '500px',
-      disableClose: true, // Prevents closing the dialog by clicking outside
+      data: { selectedDate: new Date() } // You can pass initial selected date if needed
     });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      console.log('Selected date:', result);
+
+    dialogRef.afterClosed().subscribe((result: Date) => {
+      if (result) {
+        // Handle the selected date
+        console.log('Selected Date: ', result);
+      }
     });
-}
+  }
 
 }

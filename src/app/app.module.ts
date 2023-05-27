@@ -19,7 +19,7 @@ import { NgForm } from '@angular/forms';
 import { ReactiveFormsModule} from '@angular/forms';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatCommonModule} from '@angular/material/core';
-import { MatDialogModule, MatDialogContent, MatDialogActions } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogContent, MatDialogActions,MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 import { MatOptionModule } from '@angular/material/core';
 import { AdminpfComponent } from './adminpf/adminpf.component';
 import { NurseappointComponent } from './nurseappoint/nurseappoint.component';
@@ -36,7 +36,8 @@ import { AddnurseComponent } from './admin/addnurse/addnurse.component';
 import { PatiendbComponent } from './patiendb/patiendb.component';
 import { PatientappointComponent } from './patiendb/patientappoint/patientappoint.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { NativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -79,10 +80,13 @@ import { NativeDateModule } from '@angular/material/core';
     MatSidenavModule,
     MatListModule,
     MatDatepickerModule,
-    NativeDateModule
+    MatNativeDateModule,
+    MatSelectModule
 
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: true } }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
