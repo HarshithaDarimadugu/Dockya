@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { CancelComponent } from './cancel/cancel.component';
 import { AdddoctorComponent } from './adddoctor/adddoctor.component';
 import { AddnurseComponent } from './addnurse/addnurse.component';
+import { EmailverifyComponent } from './emailverify/emailverify.component';
 
 @Component({
   selector: 'app-admin',
@@ -30,7 +31,12 @@ export class AdminComponent {
       disableClose: true,
     });
   }
-  
+  openDialogBox4(): void {
+    const dialogRef = this.dialog.open(EmailverifyComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
 
   
 

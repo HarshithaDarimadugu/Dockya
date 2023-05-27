@@ -17,6 +17,8 @@ import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
 import { AddnurseComponent } from './admin/addnurse/addnurse.component';
 import { PatiendbComponent } from './patiendb/patiendb.component';
 import { PatientappointComponent } from './patiendb/patientappoint/patientappoint.component';
+import { EmailverifyComponent } from './admin/emailverify/emailverify.component';
+import { ResetpwComponent } from './admin/resetpw/resetpw.component';
 
 
 
@@ -65,6 +67,12 @@ const routes: Routes = [
   },
   {
     path:'patientappoint',component:PatientappointComponent
+  },
+  {
+    path:'emailverify', component:EmailverifyComponent
+  },
+  {
+    path:'resetpw',component:ResetpwComponent
   },
 
 ];

@@ -1,0 +1,27 @@
+<div class="sample">
+    <mat-card class="card">
+        <h1 class="heading">Reset Password</h1>
+        <br>
+        <br>
+        <mat-form-field class="pw">
+            <mat-label>New Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <br>
+          <mat-form-field class="pw">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <br>
+          <div class="button" align="end">
+            <button mat-button class="saved">Save</button>
+            <a href="admin"><button mat-button class="save">Cancel</button></a>
+          </div>
+    </mat-card>
+</div>

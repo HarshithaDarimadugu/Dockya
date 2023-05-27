@@ -38,6 +38,8 @@ import { PatientappointComponent } from './patiendb/patientappoint/patientappoin
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
+import { EmailverifyComponent } from './admin/emailverify/emailverify.component';
+import { ResetpwComponent } from './admin/resetpw/resetpw.component';
 
 
 
@@ -58,6 +60,8 @@ import {MatSelectModule} from '@angular/material/select';
     AddnurseComponent,
     PatiendbComponent,
     PatientappointComponent,
+    EmailverifyComponent,
+    ResetpwComponent,
    
    
   ],
