@@ -40,6 +40,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import { EmailverifyComponent } from './admin/emailverify/emailverify.component';
 import { ResetpwComponent } from './admin/resetpw/resetpw.component';
+import { PatienthistoryComponent } from './patienthistory/patienthistory.component';
+import { ViewprescriptionComponent } from './patienthistory/viewprescription/viewprescription.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -62,6 +65,8 @@ import { ResetpwComponent } from './admin/resetpw/resetpw.component';
     PatientappointComponent,
     EmailverifyComponent,
     ResetpwComponent,
+    PatienthistoryComponent,
+    ViewprescriptionComponent,
    
    
   ],
@@ -85,7 +90,8 @@ import { ResetpwComponent } from './admin/resetpw/resetpw.component';
     MatListModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
 
   ],
   providers: [

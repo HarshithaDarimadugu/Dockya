@@ -19,6 +19,8 @@ import { PatiendbComponent } from './patiendb/patiendb.component';
 import { PatientappointComponent } from './patiendb/patientappoint/patientappoint.component';
 import { EmailverifyComponent } from './admin/emailverify/emailverify.component';
 import { ResetpwComponent } from './admin/resetpw/resetpw.component';
+import { PatienthistoryComponent } from './patienthistory/patienthistory.component';
+import { ViewprescriptionComponent } from './patienthistory/viewprescription/viewprescription.component';
 
 
 
@@ -73,6 +75,12 @@ const routes: Routes = [
   },
   {
     path:'resetpw',component:ResetpwComponent
+  },
+  {
+    path:'patienthistory' , component:PatienthistoryComponent
+  },
+  {
+    path:'viewprescription', component:ViewprescriptionComponent
   },
 
 ];
