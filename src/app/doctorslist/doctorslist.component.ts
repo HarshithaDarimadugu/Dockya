@@ -1,6 +1,7 @@
 
-import { Component, Input } from '@angular/core';
+import { Component, Input, ValueSansProvider } from '@angular/core';
 import { MatButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 import {MatTableDataSource} from '@angular/material/table';
 import {Observable, ReplaySubject} from 'rxjs';
 
@@ -12,11 +13,12 @@ export interface DoctorsList {
   email: string;
   speciality: string;
   bloodgroup:string,
-  contactno:number
+  contactno:number,
+  
 
 }
 const ELEMENT_DATA: DoctorsList[] = [
-  {Id: 1, name: 'Karl',email :"karl@gmail.com", speciality: 'ENT',bloodgroup: 'A+', contactno:1234567890},
+  {Id: 1, name: 'Karl',email :"karl@gmail.com", speciality: 'ENT',bloodgroup: 'A+', contactno:1234567890,},
   {Id: 2, name: 'Henry',email :"henry@gmail.com", speciality: 'Cardilogist',bloodgroup: 'O+', contactno:9989893459},
   {Id: 3, name: 'Shiva',email :"shiva@gmail.com", speciality: 'Dermatologist',bloodgroup: 'AB+', contactno:7896543568},
   {Id: 4, name: 'Nandhini',email :"nandu@gmail.com", speciality: 'Gynaecologist',bloodgroup: 'A-', contactno:9754361234},

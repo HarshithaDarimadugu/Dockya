@@ -6,6 +6,8 @@ import { AddnurseComponent } from './addnurse/addnurse.component';
 import { EmailverifyComponent } from './emailverify/emailverify.component';
 import { UpdatedoctorComponent } from '../updatedoctor/updatedoctor.component';
 import { UpadtenurseComponent } from '../upadtenurse/upadtenurse.component';
+import { EditprescriptionComponent } from '../editprescription/editprescription.component';
+import { NewobservationComponent } from '../newobservation/newobservation.component';
 
 @Component({
   selector: 'app-admin',
@@ -51,7 +53,18 @@ export class AdminComponent {
       disableClose: true,
     });
   }
-
+  openDialogBox7(): void {
+    const dialogRef = this.dialog.open(EditprescriptionComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
+  openDialogBox8(): void {
+    const dialogRef = this.dialog.open(NewobservationComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
   
 
 }

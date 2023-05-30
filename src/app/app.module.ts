@@ -45,6 +45,8 @@ import { ViewprescriptionComponent } from './patienthistory/viewprescription/vie
 import { HttpClientModule } from '@angular/common/http';
 import { UpdatedoctorComponent } from './updatedoctor/updatedoctor.component';
 import { UpadtenurseComponent } from './upadtenurse/upadtenurse.component';
+import { EditprescriptionComponent } from './editprescription/editprescription.component';
+import { NewobservationComponent } from './newobservation/newobservation.component';
 
 
 
@@ -71,6 +73,8 @@ import { UpadtenurseComponent } from './upadtenurse/upadtenurse.component';
     ViewprescriptionComponent,
     UpdatedoctorComponent,
     UpadtenurseComponent,
+    EditprescriptionComponent,
+    NewobservationComponent,
    
    
   ],

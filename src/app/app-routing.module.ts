@@ -23,6 +23,8 @@ import { PatienthistoryComponent } from './patienthistory/patienthistory.compone
 import { ViewprescriptionComponent } from './patienthistory/viewprescription/viewprescription.component';
 import { UpadtenurseComponent } from './upadtenurse/upadtenurse.component';
 import { UpdatedoctorComponent } from './updatedoctor/updatedoctor.component';
+import { EditprescriptionComponent } from './editprescription/editprescription.component';
+import { NewobservationComponent } from './newobservation/newobservation.component';
 
 
 
@@ -89,6 +91,12 @@ const routes: Routes = [
   },
   {
     path:'upadtenurse', component:UpadtenurseComponent
+  },
+  {
+    path:'editprescription', component:EditprescriptionComponent
+  },
+  {
+    path:'newobservation', component:NewobservationComponent
   },
 
 ];
