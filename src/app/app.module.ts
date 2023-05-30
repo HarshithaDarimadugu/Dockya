@@ -43,6 +43,8 @@ import { ResetpwComponent } from './admin/resetpw/resetpw.component';
 import { PatienthistoryComponent } from './patienthistory/patienthistory.component';
 import { ViewprescriptionComponent } from './patienthistory/viewprescription/viewprescription.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UpdatedoctorComponent } from './updatedoctor/updatedoctor.component';
+import { UpadtenurseComponent } from './upadtenurse/upadtenurse.component';
 
 
 
@@ -67,6 +69,8 @@ import { HttpClientModule } from '@angular/common/http';
     ResetpwComponent,
     PatienthistoryComponent,
     ViewprescriptionComponent,
+    UpdatedoctorComponent,
+    UpadtenurseComponent,
    
    
   ],

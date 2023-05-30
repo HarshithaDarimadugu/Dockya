@@ -31,14 +31,16 @@ const ELEMENT_DATA: DoctorsList[] = [
   styleUrls: ['./doctorslist.component.css']
 })
 export class DoctorslistComponent {
-  displayedColumns: string[] = ['Id', 'name', 'email', 'speciality','bloodgroup','contactno'];
+  displayedColumns: string[] = ['Id', 'name', 'email', 'speciality','bloodgroup','contactno','actions'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
-
+  onButtonClicked(row: any) {
+    // handle button click for the specific row
+  }
 
 
 }

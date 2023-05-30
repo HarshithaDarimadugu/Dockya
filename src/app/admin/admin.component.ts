@@ -4,6 +4,8 @@ import { CancelComponent } from './cancel/cancel.component';
 import { AdddoctorComponent } from './adddoctor/adddoctor.component';
 import { AddnurseComponent } from './addnurse/addnurse.component';
 import { EmailverifyComponent } from './emailverify/emailverify.component';
+import { UpdatedoctorComponent } from '../updatedoctor/updatedoctor.component';
+import { UpadtenurseComponent } from '../upadtenurse/upadtenurse.component';
 
 @Component({
   selector: 'app-admin',
@@ -33,6 +35,18 @@ export class AdminComponent {
   }
   openDialogBox4(): void {
     const dialogRef = this.dialog.open(EmailverifyComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
+  openDialogBox5(): void {
+    const dialogRef = this.dialog.open(UpdatedoctorComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
+  openDialogBox6(): void {
+    const dialogRef = this.dialog.open(UpadtenurseComponent, {
       width: '500px',
       disableClose: true,
     });
