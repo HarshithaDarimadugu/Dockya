@@ -47,6 +47,7 @@ import { UpdatedoctorComponent } from './updatedoctor/updatedoctor.component';
 import { UpadtenurseComponent } from './upadtenurse/upadtenurse.component';
 import { EditprescriptionComponent } from './editprescription/editprescription.component';
 import { NewobservationComponent } from './newobservation/newobservation.component';
+import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.component';
 
 
 
@@ -75,6 +76,7 @@ import { NewobservationComponent } from './newobservation/newobservation.compone
     UpadtenurseComponent,
     EditprescriptionComponent,
     NewobservationComponent,
+    CancelappointComponent,
    
    
   ],
