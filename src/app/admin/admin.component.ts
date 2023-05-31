@@ -8,6 +8,7 @@ import { UpdatedoctorComponent } from '../updatedoctor/updatedoctor.component';
 import { UpadtenurseComponent } from '../upadtenurse/upadtenurse.component';
 import { EditprescriptionComponent } from '../editprescription/editprescription.component';
 import { NewobservationComponent } from '../newobservation/newobservation.component';
+import { EditpatientpfComponent } from '../editpatientpf/editpatientpf.component';
 
 @Component({
   selector: 'app-admin',
@@ -65,6 +66,11 @@ export class AdminComponent {
       disableClose: true,
     });
   }
-  
+  openDialogBox9(): void {
+    const dialogRef = this.dialog.open(EditpatientpfComponent, {
+      width: '500px',
+      disableClose: true,
+    });
+  }
 
 }

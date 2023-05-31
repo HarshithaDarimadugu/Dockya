@@ -49,6 +49,7 @@ import { EditprescriptionComponent } from './editprescription/editprescription.c
 import { NewobservationComponent } from './newobservation/newobservation.component';
 import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { EditpatientpfComponent } from './editpatientpf/editpatientpf.component';
 
 
 
@@ -78,6 +79,7 @@ import {MatRadioModule} from '@angular/material/radio';
     EditprescriptionComponent,
     NewobservationComponent,
     CancelappointComponent,
+    EditpatientpfComponent,
    
    
   ],

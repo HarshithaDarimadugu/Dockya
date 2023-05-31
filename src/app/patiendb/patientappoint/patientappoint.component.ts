@@ -30,12 +30,8 @@ export class PatientappointComponent {
   onCancel(): void {
     this.dialogRef.close();
   }
-  title ='angular-dialog';
  
-  openDialogBox(): void {
-    const dialogRef = this.dialog.open(CancelappointComponent, {
-      width: '500px',
-      disableClose: true,
-    });
-  }
+ 
+  
 }
+

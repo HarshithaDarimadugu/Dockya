@@ -26,6 +26,7 @@ import { UpdatedoctorComponent } from './updatedoctor/updatedoctor.component';
 import { EditprescriptionComponent } from './editprescription/editprescription.component';
 import { NewobservationComponent } from './newobservation/newobservation.component';
 import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.component';
+import { EditpatientpfComponent } from './editpatientpf/editpatientpf.component';
 
 
 
@@ -101,6 +102,9 @@ const routes: Routes = [
   },
   {
     path:'cancelappoint', component:CancelappointComponent
+  },
+  {
+    path:'editpatientpf', component:EditpatientpfComponent
   },
 
 ];

@@ -1,12 +1,33 @@
-<div>
-    <mat-dialog-content>
-        <h2 style="padding-left: 20px;">
-            Are you sure you want to cancel your Appointment ?
-        </h2>
-        <br>
-        <div class="button" align="end">
-            <a href="patiendb"><button mat-button mat-dialog-close class="saved">Yes</button></a>
-           <button mat-button mat-dialog-close class="save">No</button>
-        </div>
-    </mat-dialog-content>
+<div class="sample">
+    <mat-card class="card">
+      <h2 class="heading">Cancel an Appointment</h2>
+        <mat-dialog-content>
+            <table class="example-full-width" cellspacing="0" style="padding-left: 80px;"><tr>
+                <td><mat-form-field class="example-full-width">
+                    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" placeholder="Choose a date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field></td>
+                </tr>
+            </table>
+            <table class="example-full-width" cellspacing="0" style="padding-left: 80px;"><tr>
+                <td><mat-form-field class="example-full-width" style="width: 250px;">
+                    <mat-label>Doctor</mat-label>
+                    <mat-select>
+                        <mat-option value="karl">Karl(Skin Specialist)</mat-option>
+                        <mat-option value="kamesh">Kamesh(Heart Specialist)</mat-option>
+                        <mat-option value="parameshwar">Parameshwar(ENT)</mat-option>
+                    </mat-select>
+                </mat-form-field></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <div class="button" align="end">
+                <button mat-button mat-dialog-close class="saved">Yes, Cancel Appointment</button>
+                <button mat-button mat-dialog-close class="save">No</button>
+            </div>
+        </mat-dialog-content>  
+    </mat-card> 
 </div>
+    

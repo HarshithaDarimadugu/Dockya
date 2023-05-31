@@ -4,6 +4,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTableDataSource} from '@angular/material/table';
 import { PatientappointComponent } from './patientappoint/patientappoint.component';
 import { MatDialog } from '@angular/material/dialog';
+import { CancelappointComponent } from './cancelappoint/cancelappoint.component';
 
 
 
@@ -51,5 +52,11 @@ export class PatiendbComponent {
       }
     });
   }
+  openDialog1(): void {
+    const dialogRef = this.dialog.open(CancelappointComponent, {
+      width: '500px',
+      disableClose: true, // Prevents closing the dialog by clicking outside
+    });
 
+}
 }
