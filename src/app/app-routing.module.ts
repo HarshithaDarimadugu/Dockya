@@ -27,6 +27,7 @@ import { EditprescriptionComponent } from './editprescription/editprescription.c
 import { NewobservationComponent } from './newobservation/newobservation.component';
 import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.component';
 import { EditpatientpfComponent } from './editpatientpf/editpatientpf.component';
+import { ImageuploadComponent } from './imageupload/imageupload.component';
 
 
 
@@ -106,6 +107,7 @@ const routes: Routes = [
   {
     path:'editpatientpf', component:EditpatientpfComponent
   },
+  {path: 'imageupload', component:ImageuploadComponent},
 
 ];
 

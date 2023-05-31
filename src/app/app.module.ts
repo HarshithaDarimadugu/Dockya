@@ -50,6 +50,7 @@ import { NewobservationComponent } from './newobservation/newobservation.compone
 import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { EditpatientpfComponent } from './editpatientpf/editpatientpf.component';
+import { ImageuploadComponent } from './imageupload/imageupload.component';
 
 
 
@@ -80,6 +81,7 @@ import { EditpatientpfComponent } from './editpatientpf/editpatientpf.component'
     NewobservationComponent,
     CancelappointComponent,
     EditpatientpfComponent,
+    ImageuploadComponent,
    
    
   ],
