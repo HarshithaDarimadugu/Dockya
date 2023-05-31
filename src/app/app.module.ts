@@ -48,6 +48,7 @@ import { UpadtenurseComponent } from './upadtenurse/upadtenurse.component';
 import { EditprescriptionComponent } from './editprescription/editprescription.component';
 import { NewobservationComponent } from './newobservation/newobservation.component';
 import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -101,7 +102,8 @@ import { CancelappointComponent } from './patiendb/cancelappoint/cancelappoint.c
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatRadioModule
 
   ],
   providers: [

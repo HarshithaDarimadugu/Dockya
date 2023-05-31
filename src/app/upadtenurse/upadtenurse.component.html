@@ -6,20 +6,17 @@
                 <table class="example-full-width" cellspacing="3"><tr>
                     <td><mat-form-field class="example-full-width">
                       <mat-label>Email ID</mat-label>
-                      <input matInput name="text" placeholder="abc@gmail.com" [disabled]="isFieldDisabled" required >
+                      <input matInput name="text" placeholder="abc@gmail.com" required >
+                    </mat-form-field></td>
+                    <td><mat-form-field style="width: 212px;">
+                      <mat-label>Enter your password</mat-label>
+                      <input matInput [type]="hide ? 'password' : 'text'">
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </button>
                     </mat-form-field></td>
                     </tr>
                   </table> 
-                  <table class="sample" cellspacing="3"><tr>
-                    <td><mat-form-field style="width: 212px;">
-                        <mat-label>Enter your password</mat-label>
-                        <input matInput [type]="hide ? 'password' : 'text'">
-                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                        </button>
-                      </mat-form-field></td>
-                    </tr>
-                  </table>
                              
                 <table class="example-full-width" cellspacing="3"><tr>
                   <td><mat-form-field class="example-full-width">

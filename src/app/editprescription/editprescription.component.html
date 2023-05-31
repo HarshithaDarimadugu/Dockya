@@ -13,6 +13,7 @@
             </mat-select>
         </mat-form-field>
         <br>
+        <br>
         <mat-form-field class="example-full-width" style="width: 350px; padding-left: 50px;">
           <mat-label>Dosage</mat-label>
             <mat-select>
@@ -24,10 +25,12 @@
             </mat-select>
         </mat-form-field>
         <br>
-        <mat-form-field class="example-full-width" style="width: 350px; padding-left: 50px;">
-            <mat-label>Notes</mat-label>
-            <textarea matInput placeholder="Ex. After food ...">Before food and Once a day</textarea>
-        </mat-form-field>   
+        <br>
+        <mat-radio-group aria-label="Select an option" style="padding-left: 50px;">
+            <mat-radio-button value="1">Before food</mat-radio-button>
+            <mat-radio-button value="2">After food</mat-radio-button>
+        </mat-radio-group>    
+        <br>
         <div class="button" align="end">
             <button mat-button mat-dialog-close class="saved">Save</button>
             <button mat-button mat-dialog-close class="save">Cancel</button>
